@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreLaser</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3b9ff962e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-custom-gradient {
+          background: linear-gradient(
+            to bottom,
+            #E20613 0%,
+            #DE0512 14.28%,
+            #D30512 28.56%,
+            #C10411 42.84%,
+            #A80310 57.12%,
+            #88020F 71.4%,
+            #60010D 85.68%,
+            #3E000C 100%
+          );
+        }
+        .bg-custom-gradient2 {
+      background: linear-gradient(
+        to bottom,
+        #3E000C 0%,
+        #60010D 14.28%,
+        #88020F 28.56%,
+        #A80310 42.84%,
+        #C10411 57.12%,
+        #D30512 71.4%,
+        #DE0512 85.68%,
+        #E20613 100%
+      );
+      position: relative;
+      overflow: hidden;
+    }
+
+
+
+.bg-custom-gradient3::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Preenche o espaço total da section */
+  background: url("assets/xbig2.png") no-repeat center/cover;
+  z-index: 0; /* Garante que a imagem fique atrás do conteúdo */
+}
+      </style>
+</head>
+<body>
+  <header>
+
+    <div class="lg:min-h-screen bg-gradient-to-b from-black to-red-900 flex flex-col relative overflow-hidden">
+        <!-- Redes Sociais e Logo -->
+        <div class="lg:absolute lg:top-6 lg:left-6 mx-auto mt-24 lg:mt-0 mb-20 lg:mb-0">
+          <img src="assets/CoreLaser_logo.svg" alt="CoreLaser" class="w-40" />
+        </div>
+        <div class="absolute top-6 right-6 flex space-x-4 text-white hidden lg:flex">
+          <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+            <img src="assets/tiktok_fill.svg" alt="TikTok" class="w-5 h-5" />
+          </a>
+          <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+            <img src="assets/ins_fill.svg" alt="Instagram" class="w-5 h-5" />
+          </a>
+          <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+            <img src="assets/youtube_fill.svg" alt="YouTube" class="w-5 h-5" />
+          </a>
+        </div>
+      
+        <!-- Conteúdo principal -->
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 h-full">
+          <div class="text-white lg:w-1/2 z-10">
+            <h1 class="lg:text-5xl font-bold leading-tight text-center lg:text-left mb-20 text-2xl italic lg:mb-0">
+              TECNOLOGIA, <span class="text-red-300">ALTA PERFORMANCE</span> & <br />
+              RESULTADOS <span class="text-white">GARANTIDOS</span>
+            </h1>
+            <p class="mt-6 text-lg">
+              Equipamentos Avançados para Laserterapia, Ondas de Choque e Terapias Regenerativas
+            </p>
+            <p class="mt-4 text-sm">
+              A CoreLaser combina inovação tecnológica com excelência clínica para oferecer dispositivos médicos de alta performance. Desde 2006, somos referência em soluções terapêuticas que otimizam tratamentos e entregam resultados superiores. Com nossos equipamentos, você não apenas melhora o desempenho clínico, mas também garante um retorno financeiro rápido e seguro.
+            </p>
+            <div class="mt-8 flex gap-4 hidden lg:flex">
+                <!-- Botão "Fale Conosco" -->
+                <a href="#" class="flex items-center justify-center bg-white text-red-700 border border-red-700 py-3 px-8 rounded-full font-semibold hover:bg-red-100 transition">
+                  Fale Conosco
+                </a>
+                <div>
+                    <a href="#" class="flex items-center justify-center bg-red-700 border border-red-700 p-3 rounded-full">
+                        <img src="assets/ArrowUpRight.svg" alt="Download PDF" />
+                    </a>
+                </div>
+              
+                <div class="border-3 border-l border-white"></div>
+
+                <div class="flex">
+                    <div class="flex items-center justify-center bg-white text-black rounded-full border border-red-700 p-3">
+                        <a href="#">
+                            <img src="assets/instaBlack.png" class="w-5 h-5" />
+                        </a>
+                    </div>
+                    <div class="pl-4">
+                        <span class="text-white font-bold">Nos siga no Instagram</span>
+                        <p class="opacity-20">e acompanhe nosso trabalho</p>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+          <div class="p-10 flex space-x-4 text-white lg:hidden">
+            <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+              <img src="assets/tiktok_fill.svg" alt="TikTok" class="w-5 h-5" />
+            </a>
+            <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+              <img src="assets/ins_fill.svg" alt="Instagram" class="w-5 h-5" />
+            </a>
+            <a href="#" class="p-3 rounded-full bg-red-600 hover:bg-red-500">
+              <img src="assets/youtube_fill.svg" alt="YouTube" class="w-5 h-5" />
+            </a>
+          </div>
+          <div class="relative lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+            <img
+              src="assets/woman.png"
+              alt="Atleta"
+              class="max-w-md lg:max-w-lg z-10 lg:block hidden"
+            />
+            <img
+            src="assets/woman-mobile.png"
+            alt="Atleta"
+            class=" z-10 lg:hidden"
+          />
+            <img
+              src="assets/X.png"
+              alt="Background"
+              class="absolute lg:right-96 w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      
+        <!-- Navegação -->
+        <div class="absolute bottom-6 w-full flex justify-center z-50 hidden lg:flex">
+          <nav class="flex space-x-6 text-white text-sm border border-red-700 bg-red-700 rounded-full p-3">
+            <a href="#" class="hover:underline">Início</a>
+            <a href="#" class="hover:underline">Diferenciais</a>
+            <a href="#" class="hover:underline">Tecnologia</a>
+            <a href="#" class="hover:underline">Preço Especial</a>
+          </nav>
+        </div>
+      </div>
+</header>
+      
+
+    <section class="flex flex-col lg:flex-row items-center justify-between gap-8 py-16 px-8 bg-gradient-to-t from-red-900 to-black">
+        <!-- Texto à esquerda -->
+        <div class="max-w-3xl text-white container mx-auto">
+          <h2 class="md:text-7xl lg:text-4xl text-5xl italic font-bold">
+            POR QUE<br/> ESCOLHER <br />A <span class="text-red-500">CORELASER?</span>
+          </h2>
+          <ul class="mt-8 space-y-6 text-xl leading-relaxed">
+            <li>
+              <strong class="text-white italic ">Tecnologia de Ponta:</strong><br>
+              Equipamentos como o Chelt e o iLux XP trazem alta intensidade e versatilidade com até 6 frequências de onda.
+            </li>
+            <li>
+              <strong class="text-white italic">Financiamento Facilitado:</strong><br>
+              Parcelamento em até XX vezes.
+            </li>
+            <li>
+              <strong class="text-white italic">Retorno Garantido:</strong><br>
+              Com apenas <span class="text-red-500">6 atendimentos</span>, você recupera o valor da parcela do equipamento.
+            </li>
+            <li>
+              <strong class="text-white italic">Soluções Regenerativas Exclusivas:</strong><br>
+              Kits de PRP e coleta de células mesenquimais, prontos para uso, sem necessidade de centrifugação.
+            </li>
+            <li>
+              <strong class="text-white italic">Suporte Completo:</strong><br>
+              Treinamento técnico, consultoria personalizada e garantia de qualidade.
+            </li>
+          </ul>
+        </div>
+      
+        <!-- Vídeo à direita -->
+        <div class="relative">
+          <video autoplay loop muted class="rounded-xl shadow-lg w-full h-auto">
+            <source src="https://s3-figma-videos-production-sig.figma.com/video/1343982015119693441/TEAM/fdaf/e167/-b042-41c4-99f4-11d337ca92c8?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EtL5rbbmQa~ewALZc2UHX7SPVD5mTK7wLiwB3xIlvL4frUMTRy66Vcs2zPVYNtb25d~71pNAkDDk67a8KiS~x5uyWgv2p3FsogrlUrqvmtWzIUZn1PhWYpqHz6eVy7VrybgM~MrCrvDEaeFNuYCwvdBb17jAaYoWJgcJCedUczW~UwYO8uDnbxBMtuQgag8Tp2VfvvluEylGgIOP8UzgG135vE3iL32jH6bopLv1nnFKeRSmLSXI9uPR6Q4~gy~VpoxM~w~sUGMm3ahXcVOUEBere65v8Q6xV-NFPc8AVOIVH2~s7qkW~woAdsQIrBm~Iny0DEtAQj6hukjLSRspMg__" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+          <!-- Botão sobre o vídeo -->
+          <a href="#" class="absolute bottom-4 right-4 flex items-center gap-2 bg-white text-red-700 font-semibold py-3 px-6 rounded-full hover:bg-red-100 transition lg:block hidden">
+            Fale Conosco
+            <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+      </section>
+      
+
+      <section class="bg-white p-16 text-center">
+        <h1 class="uppercase text-[#3E000C] text-4xl italic">
+            Equipamentos confiados por <span class="font-bold font-red-500">gigantes</span>
+        </h1>
+        <!-- Contêiner do carrossel -->
+        <div class="mt-16">
+            <!-- Wrapper para slick no mobile -->
+            <div class="logos-slider hidden lg:flex justify-center items-center gap-4 space-x-20">
+                <img src="assets/flamengo.svg" alt="flamengo">
+                <img src="assets/brasil_oli.png" alt="brasil">
+                <img src="assets/furacao.svg" alt="furacao">
+                <img src="assets/cbf.svg" alt="cbf">
+            </div>
+    
+            <!-- Versão para mobile -->
+            <div class="carousel-different lg:hidden">
+                <img src="assets/flamengo.svg" alt="flamengo">
+                <img src="assets/brasil_oli.png" alt="brasil">
+                <img src="assets/furacao.svg" alt="furacao">
+                <img src="assets/cbf.svg" alt="cbf">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="relative bg-gradient-to-b from-red-900 to-black text-white py-16 overflow-hidden">
+      <!-- Fundo decorativo -->
+      <div class="absolute inset-0 flex justify-center items-center">
+        <div class="text-red-500/20 font-extrabold text-[200px] md:text-[350px] transform rotate-45">
+          <img src="assets/xbig2.png" alt="">
+        </div>
+      </div>
+    
+      <!-- Título e botão -->
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          NOSSOS PRODUTOS <br> EM <span class="text-red-500">DESTAQUE</span>
+        </h2>
+        <a href="#" class="mt-6 inline-flex items-center gap-2 bg-red-500 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-600 transition">
+          Saiba Mais
+          <span class="material-icons">arrow_forward</span>
+        </a>
+      </div>
+    
+      <!-- Carrossel -->
+      <div class="relative mt-12 container mx-auto px-4">
+        <div class="carousel flex items-center justify-center gap-8">
+          <!-- Slide 1 -->
+          <div class="flex flex-col items-center">
+            <div class="relative">
+              <img src="assets/product.png" alt="Produto 1" class="max-w-sm md:max-w-md rounded-xl lg:max-w-md lg:mx-auto shadow-lg">
+            </div>
+            <p class="mt-8 text-2xl md:text-3xl font-bold tracking-wide leading-snug text-center">
+              Mais de <span class="text-red-500">150 protocolos</span> disponíveis <br> para otimizar seus tratamentos!
+            </p>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="flex flex-col items-center">
+            <div class="relative">
+              <img src="assets/product.png" alt="Produto 2" class="max-w-sm md:max-w-md rounded-xl lg:max-w-md lg:mx-auto shadow-lg">
+            </div>
+            <p class="mt-8 text-2xl md:text-3xl font-bold tracking-wide leading-snug text-center">
+              Tecnologia de ponta com <span class="text-red-500">resultados incríveis</span> para sua clínica!
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Logo CoreLaser+ -->
+      <div class="mt-10 text-center">
+        <img src="assets/CoreLaser_logo.svg" alt="CoreLaser+" class="mx-auto">
+      </div>
+    </section>
+    
+    
+      
+      
+    <section class="bg-custom-gradient p-8 md:p-16">
+      <div class="text-center relative">
+        <!-- Título -->
+        <h2 class="text-3xl md:text-5xl font-semibold text-white pt-8 md:pt-16 leading-snug">
+          <span class="font-bold">Veja</span> Como Estamos <br /> Fazendo <span class="font-bold">a Diferença</span>
+        </h2>
+        
+        <!-- Container do Vídeo -->
+        <div class="relative mt-8 md:mt-16">
+          <!-- Vídeo -->
+          <div class="relative w-full mx-auto max-w-[400px] h-[600px] md:max-w-3xl md:h-auto">
+            <video 
+              id="videoPlayer" 
+              src="https://s3-figma-videos-production-sig.figma.com/video/1343982015119693441/TEAM/90d0/61a6/-f770-4782-acda-491c1df1e11f?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=etk8QRIeJGhfCo2eusQF-gBfgzaXVRMOmJkoqnWxHLWnQuW~ehWz1mm~jZN~KuJ4AQxxajmFEibuRKWByPPawVaHMfegq1H91uG8mBJIFDcCruRxAKvwO2gdH24lrKte15uu2m3uWnLua3S3Vb0D8haNAGa2bMscQjfEz5kC371iRwGFQLv1nahrqXzIMbqNMC6WAV8EiefBD6OQGNevT~KR9vekvcOnKbt~YoULExIGs93dk9REFWdXhRDNN7uHuIDNbHjJE-GtIdj8GsxnrXi2pExEXs9j9D10sL9TatE5Eh8dJj8IOdyfIrADU1kJ4vzXjy8xUcjsykpvxKJaTQ__" 
+              class="absolute w-full h-full object-cover rounded-lg shadow-lg lg:relative" 
+              muted
+            ></video>
+          </div>
+          
+          <!-- Botão Play -->
+          <button 
+            id="playButton" 
+            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-full cursor-pointer w-16 h-16 md:w-20 md:h-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    
+      
+
+      <section class="bg-white p-16">
+        <h1 class="uppercase text-[#E20613] lg:text-4xl text-2xl italic text-center">
+            <span class="font-bold">profissionais</span> que <br />
+            transformaram seus <span class="font-bold">resultados</span>
+        </h1>
+    
+        <div class="mt-32 relative">
+            <!-- Carrossel -->
+            <div class="carousel max-w-lg mx-auto">
+                <div>
+                    <h2>Alberto Silva</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu magna massa. Mauris id risus non sapien euismod molestie. Fusce nisl sapien, semper nec euismod sit amet.</p>
+                </div>
+                <div>
+                    <h2>Maria Oliveira</h2>
+                    <p>Vestibulum a mauris ac metus auctor euismod non non nulla. Morbi scelerisque nisl eget justo vestibulum pretium.</p>
+                </div>
+                <div>
+                    <h2>João Pereira</h2>
+                    <p>Aliquam erat volutpat. Sed lacinia arcu ut quam elementum, nec tincidunt orci facilisis.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="bg-custom-gradient2 text-white py-16 px-4">
+      <!-- Título principal -->
+      <h2 class="text-center text-4xl font-bold mb-8">
+        O <span class="text-red-600">FUTURO</span> DE SUA CLÍNICA <br />
+        COM <span class="text-red-600">CONDIÇÕES EXCLUSIVAS</span>
+      </h2>
+    
+      <!-- Cards -->
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-8 mb-8">
+        <!-- Card 1 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80 min-h-[220px] flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Recupere o investimento rapidamente:</h3>
+            <p class="text-sm mb-4">
+              Em apenas X atendimentos, o valor da parcela do equipamento está pago.
+            </p>
+          </div>
+          <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+            Saiba mais
+          </button>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80 min-h-[220px] flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Financiamento facilitado:</h3>
+            <p class="text-sm mb-4">
+              Parcelamento em até XX vezes, com condições especiais.
+            </p>
+          </div>
+          <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+            Saiba mais
+          </button>
+        </div>
+      </div>
+    
+      <!-- Botão central -->
+      <div class="text-center">
+        <button class="bg-white text-red-600 px-6 py-2 font-semibold rounded-full shadow-md hover:bg-gray-200 flex items-center gap-2 mx-auto">
+          Fale Conosco
+          <a href="#" class="flex items-center justify-center bg-[#3E000C] border border-red-700 p-1 rounded-full">
+            <img src="assets/ArrowUpRight.svg" alt="Download PDF" />
+        </a>
+        </button>
+      </div>
+    </section>
+    
+    
+
+    <section class="relative bg-custom-gradient3 bg-custom-gradient2  py-16 px-4 text-white ">
+  <div class="text-center">
+    <h2 class="text-3xl font-bold uppercase italic">
+      <span class="text-red-600"> Benefícios</span> <br /> exclusivos para <span class="text-red-600">você</span>
+    </h2>
+  </div>
+
+  <div class="mt-12 relative z-10">
+    <div class="carousel-different flex gap-4  mx-auto justify-center items-center">
+      <div class="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-center items-center min-w-[250px]">
+        <img src="assets/box.svg" alt="Ícone 1" class="mb-4" />
+        <p class="text-center text-sm">
+          Recupere seu investimento com rapidez e segurança
+        </p>
+      </div>
+  
+      <div class="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-center items-center min-w-[250px]">
+        <img src="assets/money.svg" alt="Ícone 2" class="mb-4" />
+        <p class="text-center text-sm">
+          Recupere seu investimento com rapidez e segurança
+        </p>
+      </div>
+  
+      <div class="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-center items-center min-w-[250px]">
+        <img src="assets/selo.svg" alt="Ícone 3" class="mb-4" />
+        <p class="text-center text-sm">
+          Recupere seu investimento com rapidez e segurança
+        </p>
+      </div>
+  
+      <div class="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-center items-center min-w-[250px]">
+        <img src="assets/hand.svg" alt="Ícone 4" class="mb-4" />
+        <p class="text-center text-sm">
+          Recupere seu investimento com rapidez e segurança
+        </p>
+      </div>
+  
+      <div class="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-center items-center min-w-[250px]">
+        <img src="assets/talking.svg" alt="Ícone 5" class="mb-4" />
+        <p class="text-center text-sm">
+          Recupere seu investimento com rapidez e segurança
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="lg:bg-white text-black mt-12 p-16 rounded-lg max-w-2xl mx-auto shadow-md relative z-10">
+    <h3 class="text-center text-white lg:text-red-600 text-xl font-bold uppercase mb-6">
+      Descubra o equipamento ideal para suas necessidades
+    </h3>
+    <form>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input type="text" placeholder="Nome completo" class="border border-gray-300 p-2 rounded" />
+        <input type="email" placeholder="E-mail" class="border border-gray-300 p-2 rounded" />
+        <input type="text" placeholder="Área de atuação" class="border border-gray-300 p-2 rounded" />
+        <div class="lg:flex lg:gap-2 grid gap-4">
+          <input type="text" placeholder="DDD" class="border border-gray-300 p-2 rounded lg:w-16" />
+          <input type="text" placeholder="Telefone" class="border border-gray-300 p-2 rounded flex-1" />
+        </div>
+        <textarea placeholder="Comentário ou dúvida (opcional)" class="border border-gray-300 p-2 rounded col-span-1 sm:col-span-2"></textarea>
+      </div>
+      <div class="mt-6 text-center">
+        <button type="submit" class="lg:bg-red-600 bg-[#E20613] text-white py-2 px-6 rounded hover:bg-red-700">
+          Quero Minha Demonstração
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-gradient-to-b from-[#3E000C] to-gray-900 text-white py-16">
+  <div class=" mx-auto px-8">
+    <!-- Título e Subtítulo -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-5xl font-bold text-left">
+        Destaque-se com a Tecnologia <span class="text-red-600">CoreLaser!</span>
+      </h2>
+      <p class="text-lg md:text-2xl mt-4 text-left">
+        Não perca tempo. Eleve o padrão de atendimento em sua clínica ou hospital agora mesmo.
+      </p>
+      <p class="mt-6 text-lg md:text-3xl font-bold text-left">
+        Fale conosco: <span class="text-white">(21) 9 9766-8895</span> |
+        <a href="mailto:atendimento@corelaser.com.br" class="text-white hover:underline">
+          atendimento@corelaser.com.br
+        </a>
+      </p>
+      <hr class="border-t border-gray-600 mt-8">
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Coluna 1: Logo e descrição -->
+      <div class="text-center md:text-left">
+        <img src="assets/corelase-footer.svg" alt="" class="mx-auto lg:mx-0">
+        <p class="text-lg mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <!-- Coluna 2: Menu -->
+      <div class="text-center md:text-left hidden lg:block">
+        <h3 class="text-2xl font-bold">Menu</h3>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-lg hover:underline">Início</a></li>
+          <li><a href="#" class="text-lg hover:underline">Diferenciais</a></li>
+          <li><a href="#" class="text-lg hover:underline">Tecnologia</a></li>
+          <li><a href="#" class="text-lg hover:underline">Preço Especial</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Social Links -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold">Social Links</h3>
+        <ul class="mt-4 space-y-3">
+          <li><a href="#" class="text-lg hover:underline">Instagram</a></li>
+          <li><a href="#" class="text-lg hover:underline">Facebook</a></li>
+          <li><a href="#" class="text-lg hover:underline">TikTok</a></li>
+          <li><a href="#" class="text-lg hover:underline">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>  
+
+    <script>
+        $(document).ready(function(){
+          $('.slick-slider').slick({
+            dots: true, // Mostra os pontos
+            arrows: false, // Desativa as setas
+            infinite: true, // Carrossel infinito
+            speed: 500, // Velocidade de transição
+            fade: true, // Transição de fade
+            autoplay: true, // Reproduz automaticamente
+            autoplaySpeed: 3000 // Tempo entre transições
+          });
+        });
+      </script>
+
+      <script>
+  const videoPlayer = document.getElementById('videoPlayer');
+  const playButton = document.getElementById('playButton');
+  
+  playButton.addEventListener('click', function() {
+    if (videoPlayer.paused) {
+      videoPlayer.play();  // Toca o vídeo
+      playButton.style.display = 'none';  // Esconde o ícone de play
+    } else {
+      videoPlayer.pause();  // Pausa o vídeo
+      playButton.style.display = 'flex';  // Mostra o ícone de play
+    }
+  });
+
+  videoPlayer.addEventListener('pause', function() {
+    playButton.style.display = 'flex';  // Exibe o ícone quando o vídeo é pausado
+  });
+
+  videoPlayer.addEventListener('play', function() {
+    playButton.style.display = 'none';  // Esconde o ícone quando o vídeo está tocando
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    if ($(window).width() < 1024) {
+        $('.logos-slider-mobile').slick({
+            slidesToShow: 2, // Número de slides visíveis ao mesmo tempo
+            slidesToScroll: 1, // Número de slides a avançar por vez
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: true, // Adiciona os "dots" de navegação
+            responsive: [
+                {
+                    breakpoint: 768, // Configurações para dispositivos menores
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+});
+</script>
+<script>$(document).ready(function () {
+  $('.carousel').slick({
+    slidesToShow: 1, // Um slide visível por vez
+    slidesToScroll: 1, // Avança um slide por vez
+    autoplay: true, // Avança automaticamente
+    autoplaySpeed: 3000, // Tempo de cada slide (em ms)
+    arrows: false, // Exibe setas
+    dots: true, // Exibe os "dots" na parte inferior
+    prevArrow: '<button class="absolute left-4 md:left-12 bg-white text-black rounded-full p-2 shadow hover:bg-gray-300 z-20"><span class="material-icons">chevron_left</span></button>',
+    nextArrow: '<button class="absolute right-4 md:right-12 bg-white text-black rounded-full p-2 shadow hover:bg-gray-300 z-20"><span class="material-icons">chevron_right</span></button>',
+    responsive: [
+      {
+        breakpoint: 768, // Para telas menores
+        settings: {
+          dots: true, // Ativa os dots
+          arrows: false, // Desativa as setas no mobile
+        }
+      }
+    ]
+  });
+});
+</script>
+
+<script>
+$('.carousel-different').slick({
+  dots: false,
+  arrows: false,
+            centerMode:true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4, 
+            cssEase: 'ease',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768, // Para dispositivos menores que 768px
+                    settings: {
+                        slidesToShow: 1, // Exibir 1 imagem no mobile
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+});
+
+
+</script>
+</body>
+</html>
