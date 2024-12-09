@@ -1,8 +1,44 @@
-@media screen and (max-width: 768px) {
+@font-face {
+  font-family: "kroosItalic";
+  src: url("fonts/fontes/KrossNeueGrotesk-Italic.woff2") format("woff2"),
+    url("fonts/fontes/KrossNeueGrotesk-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "kroosItalicBold";
+  src: url("fonts/fontes/KrossNeueGrotesk-BoldItalic.woff2") format("woff2"),
+    url("fonts/fontes/KrossNeueGrotesk-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "kroos";
+  src: url("fonts/fontes/KrossNeueGrotesk-Regular.woff2") format("woff2"),
+    url("fonts/fontes/KrossNeueGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
 
 .carousel-different .slick-slide {
   margin: 0 10px;
+}
+
+.kroosItalic {
+  font-family: "kroosItalic";
+  font-style: italic;
+}
+
+.kroosItalicBold {
+  font-family: "kroosItalicBold";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.kroos {
+  font-family: "kroos";
+  font-style: normal;
 }
 
 #popup {
