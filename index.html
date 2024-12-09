@@ -45,9 +45,9 @@
 .bg-custom-gradient3::before {
   content: "";
   position: absolute;
-  inset: 0; /* Preenche o espaço total da section */
+  inset: 0; 
   background: url("assets/xbig2.png") no-repeat center/cover;
-  z-index: 0; /* Garante que a imagem fique atrás do conteúdo */
+  z-index: 0;
 }
       </style>
 </head>
@@ -55,7 +55,6 @@
   <header>
 
     <div class="lg:min-h-screen bg-gradient-to-b from-black to-red-900 flex flex-col relative overflow-hidden">
-        <!-- Redes Sociais e Logo -->
         <div class="lg:absolute lg:top-6 lg:left-6 mx-auto mt-24 lg:mt-0 mb-20 lg:mb-0">
           <img src="assets/CoreLaser_logo.svg" alt="CoreLaser" class="w-40" />
         </div>
@@ -71,7 +70,6 @@
           </a>
         </div>
       
-        <!-- Conteúdo principal -->
         <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 h-full">
           <div class="text-white lg:w-1/2 z-10">
             <h1 class="lg:text-5xl font-bold leading-tight text-center lg:text-left mb-20 text-2xl italic lg:mb-0">
@@ -85,7 +83,6 @@
               A CoreLaser combina inovação tecnológica com excelência clínica para oferecer dispositivos médicos de alta performance. Desde 2006, somos referência em soluções terapêuticas que otimizam tratamentos e entregam resultados superiores. Com nossos equipamentos, você não apenas melhora o desempenho clínico, mas também garante um retorno financeiro rápido e seguro.
             </p>
             <div class="mt-8 flex gap-4 hidden lg:flex">
-                <!-- Botão "Fale Conosco" -->
                 <a href="#" class="flex items-center justify-center bg-white text-red-700 border border-red-700 py-3 px-8 rounded-full font-semibold hover:bg-red-100 transition">
                   Fale Conosco
                 </a>
@@ -141,7 +138,6 @@
           </div>
         </div>
       
-        <!-- Navegação -->
         <div class="absolute bottom-6 w-full flex justify-center z-50 hidden lg:flex">
           <nav class="flex space-x-6 text-white text-sm border border-red-700 bg-red-700 rounded-full p-3">
             <a href="#" class="hover:underline">Início</a>
@@ -155,7 +151,6 @@
       
 
     <section class="flex flex-col lg:flex-row items-center justify-between gap-8 py-16 px-8 bg-gradient-to-t from-red-900 to-black">
-        <!-- Texto à esquerda -->
         <div class="max-w-3xl text-white container mx-auto">
           <h2 class="md:text-7xl lg:text-4xl text-5xl italic font-bold">
             POR QUE<br/> ESCOLHER <br />A <span class="text-red-500">CORELASER?</span>
@@ -184,13 +179,11 @@
           </ul>
         </div>
       
-        <!-- Vídeo à direita -->
         <div class="relative">
           <video autoplay loop muted class="rounded-xl shadow-lg w-full h-auto">
             <source src="https://s3-figma-videos-production-sig.figma.com/video/1343982015119693441/TEAM/fdaf/e167/-b042-41c4-99f4-11d337ca92c8?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EtL5rbbmQa~ewALZc2UHX7SPVD5mTK7wLiwB3xIlvL4frUMTRy66Vcs2zPVYNtb25d~71pNAkDDk67a8KiS~x5uyWgv2p3FsogrlUrqvmtWzIUZn1PhWYpqHz6eVy7VrybgM~MrCrvDEaeFNuYCwvdBb17jAaYoWJgcJCedUczW~UwYO8uDnbxBMtuQgag8Tp2VfvvluEylGgIOP8UzgG135vE3iL32jH6bopLv1nnFKeRSmLSXI9uPR6Q4~gy~VpoxM~w~sUGMm3ahXcVOUEBere65v8Q6xV-NFPc8AVOIVH2~s7qkW~woAdsQIrBm~Iny0DEtAQj6hukjLSRspMg__" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
           </video>
-          <!-- Botão sobre o vídeo -->
           <a href="#" class="absolute bottom-4 right-4 flex items-center gap-2 bg-white text-red-700 font-semibold py-3 px-6 rounded-full hover:bg-red-100 transition lg:block hidden">
             Fale Conosco
             <span class="material-icons">arrow_forward</span>
@@ -203,9 +196,7 @@
         <h1 class="uppercase text-[#3E000C] text-4xl italic">
             Equipamentos confiados por <span class="font-bold font-red-500">gigantes</span>
         </h1>
-        <!-- Contêiner do carrossel -->
         <div class="mt-16">
-            <!-- Wrapper para slick no mobile -->
             <div class="logos-slider hidden lg:flex justify-center items-center gap-4 space-x-20">
                 <img src="assets/flamengo.svg" alt="flamengo">
                 <img src="assets/brasil_oli.png" alt="brasil">
@@ -213,7 +204,6 @@
                 <img src="assets/cbf.svg" alt="cbf">
             </div>
     
-            <!-- Versão para mobile -->
             <div class="carousel-different lg:hidden">
                 <img src="assets/flamengo.svg" alt="flamengo">
                 <img src="assets/brasil_oli.png" alt="brasil">
@@ -225,14 +215,12 @@
     
 
     <section class="relative bg-gradient-to-b from-red-900 to-black text-white py-16 overflow-hidden">
-      <!-- Fundo decorativo -->
       <div class="absolute inset-0 flex justify-center items-center">
         <div class="text-red-500/20 font-extrabold text-[200px] md:text-[350px] transform rotate-45">
           <img src="assets/xbig2.png" alt="">
         </div>
       </div>
     
-      <!-- Título e botão -->
       <div class="relative z-10 text-center">
         <h2 class="text-4xl md:text-5xl font-bold leading-tight">
           NOSSOS PRODUTOS <br> EM <span class="text-red-500">DESTAQUE</span>
@@ -243,10 +231,8 @@
         </a>
       </div>
     
-      <!-- Carrossel -->
       <div class="relative mt-12 container mx-auto px-4">
         <div class="carousel flex items-center justify-center gap-8">
-          <!-- Slide 1 -->
           <div class="flex flex-col items-center">
             <div class="relative">
               <img src="assets/product.png" alt="Produto 1" class="max-w-sm md:max-w-md rounded-xl lg:max-w-md lg:mx-auto shadow-lg">
@@ -256,7 +242,6 @@
             </p>
           </div>
     
-          <!-- Slide 2 -->
           <div class="flex flex-col items-center">
             <div class="relative">
               <img src="assets/product.png" alt="Produto 2" class="max-w-sm md:max-w-md rounded-xl lg:max-w-md lg:mx-auto shadow-lg">
@@ -268,7 +253,6 @@
         </div>
       </div>
     
-      <!-- Logo CoreLaser+ -->
       <div class="mt-10 text-center">
         <img src="assets/CoreLaser_logo.svg" alt="CoreLaser+" class="mx-auto">
       </div>
@@ -279,14 +263,11 @@
       
     <section class="bg-custom-gradient p-8 md:p-16">
       <div class="text-center relative">
-        <!-- Título -->
         <h2 class="text-3xl md:text-5xl font-semibold text-white pt-8 md:pt-16 leading-snug">
           <span class="font-bold">Veja</span> Como Estamos <br /> Fazendo <span class="font-bold">a Diferença</span>
         </h2>
         
-        <!-- Container do Vídeo -->
         <div class="relative mt-8 md:mt-16">
-          <!-- Vídeo -->
           <div class="relative w-full mx-auto max-w-[400px] h-[600px] md:max-w-3xl md:h-auto">
             <video 
               id="videoPlayer" 
@@ -296,7 +277,6 @@
             ></video>
           </div>
           
-          <!-- Botão Play -->
           <button 
             id="playButton" 
             class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-full cursor-pointer w-16 h-16 md:w-20 md:h-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -319,7 +299,6 @@
         </h1>
     
         <div class="mt-32 relative">
-            <!-- Carrossel -->
             <div class="carousel max-w-lg mx-auto">
                 <div>
                     <h2>Alberto Silva</h2>
@@ -340,15 +319,12 @@
     </section>
 
     <section class="bg-custom-gradient2 text-white py-16 px-4">
-      <!-- Título principal -->
       <h2 class="text-center text-4xl font-bold mb-8">
         O <span class="text-red-600">FUTURO</span> DE SUA CLÍNICA <br />
         COM <span class="text-red-600">CONDIÇÕES EXCLUSIVAS</span>
       </h2>
     
-      <!-- Cards -->
       <div class="flex flex-col lg:flex-row justify-center items-center gap-8 mb-8">
-        <!-- Card 1 -->
         <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80 min-h-[220px] flex flex-col justify-between">
           <div>
             <h3 class="text-lg font-semibold mb-4">Recupere o investimento rapidamente:</h3>
@@ -361,7 +337,6 @@
           </button>
         </div>
     
-        <!-- Card 2 -->
         <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80 min-h-[220px] flex flex-col justify-between">
           <div>
             <h3 class="text-lg font-semibold mb-4">Financiamento facilitado:</h3>
@@ -375,7 +350,6 @@
         </div>
       </div>
     
-      <!-- Botão central -->
       <div class="text-center">
         <button class="bg-white text-red-600 px-6 py-2 font-semibold rounded-full shadow-md hover:bg-gray-200 flex items-center gap-2 mx-auto">
           Fale Conosco
@@ -440,16 +414,16 @@
     <h3 class="text-center text-white lg:text-red-600 text-xl font-bold uppercase mb-6">
       Descubra o equipamento ideal para suas necessidades
     </h3>
-    <form>
+    <form id="emailForm">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input type="text" placeholder="Nome completo" class="border border-gray-300 p-2 rounded" />
-        <input type="email" placeholder="E-mail" class="border border-gray-300 p-2 rounded" />
-        <input type="text" placeholder="Área de atuação" class="border border-gray-300 p-2 rounded" />
+        <input type="text" id="name" placeholder="Nome completo" class="border border-gray-300 p-2 rounded" />
+        <input type="email" id="email" placeholder="E-mail" class="border border-gray-300 p-2 rounded" />
+        <input type="text" id="area" placeholder="Área de atuação" class="border border-gray-300 p-2 rounded" />
         <div class="lg:flex lg:gap-2 grid gap-4">
-          <input type="text" placeholder="DDD" class="border border-gray-300 p-2 rounded lg:w-16" />
-          <input type="text" placeholder="Telefone" class="border border-gray-300 p-2 rounded flex-1" />
+          <input type="text" id="phoneDDD" placeholder="DDD" class="border border-gray-300 p-2 rounded lg:w-16" />
+          <input type="text" id="phone" placeholder="Telefone" class="border border-gray-300 p-2 rounded flex-1" />
         </div>
-        <textarea placeholder="Comentário ou dúvida (opcional)" class="border border-gray-300 p-2 rounded col-span-1 sm:col-span-2"></textarea>
+        <textarea id="message" placeholder="Comentário ou dúvida (opcional)" class="border border-gray-300 p-2 rounded col-span-1 sm:col-span-2"></textarea>
       </div>
       <div class="mt-6 text-center">
         <button type="submit" class="lg:bg-red-600 bg-[#E20613] text-white py-2 px-6 rounded hover:bg-red-700">
@@ -462,7 +436,6 @@
 
 <footer class="bg-gradient-to-b from-[#3E000C] to-gray-900 text-white py-16">
   <div class=" mx-auto px-8">
-    <!-- Título e Subtítulo -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-5xl font-bold text-left">
         Destaque-se com a Tecnologia <span class="text-red-600">CoreLaser!</span>
@@ -479,9 +452,7 @@
       <hr class="border-t border-gray-600 mt-8">
     </div>
 
-    <!-- Conteúdo principal -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      <!-- Coluna 1: Logo e descrição -->
       <div class="text-center md:text-left">
         <img src="assets/corelase-footer.svg" alt="" class="mx-auto lg:mx-0">
         <p class="text-lg mt-4">
@@ -489,7 +460,6 @@
         </p>
       </div>
 
-      <!-- Coluna 2: Menu -->
       <div class="text-center md:text-left hidden lg:block">
         <h3 class="text-2xl font-bold">Menu</h3>
         <ul class="mt-4 space-y-3">
@@ -500,7 +470,6 @@
         </ul>
       </div>
 
-      <!-- Coluna 3: Social Links -->
       <div class="text-center md:text-left">
         <h3 class="text-2xl font-bold">Social Links</h3>
         <ul class="mt-4 space-y-3">
@@ -514,6 +483,22 @@
   </div>
 </footer>
 
+<div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+    <h2 id="popup-title" class="text-lg font-bold mb-2">Título</h2>
+    <p id="popup-message" class="text-sm mb-4">Mensagem</p>
+    <button
+      id="popup-close"
+      class="bg-red-500 text-white py-1 px-4 rounded hover:bg-red-600 transition"
+    >
+      Fechar
+    </button>
+  </div>
+</div>
+
+<div id="loading-spinner" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+  <div class="loader border-t-4 border-red-500 rounded-full w-12 h-12"></div>
+</div>
 
 
 
@@ -524,13 +509,13 @@
     <script>
         $(document).ready(function(){
           $('.slick-slider').slick({
-            dots: true, // Mostra os pontos
-            arrows: false, // Desativa as setas
-            infinite: true, // Carrossel infinito
-            speed: 500, // Velocidade de transição
-            fade: true, // Transição de fade
-            autoplay: true, // Reproduz automaticamente
-            autoplaySpeed: 3000 // Tempo entre transições
+            dots: true, 
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true, 
+            autoplay: true, 
+            autoplaySpeed: 3000
           });
         });
       </script>
@@ -541,35 +526,35 @@
   
   playButton.addEventListener('click', function() {
     if (videoPlayer.paused) {
-      videoPlayer.play();  // Toca o vídeo
-      playButton.style.display = 'none';  // Esconde o ícone de play
+      videoPlayer.play();  
+      playButton.style.display = 'none';  
     } else {
-      videoPlayer.pause();  // Pausa o vídeo
-      playButton.style.display = 'flex';  // Mostra o ícone de play
+      videoPlayer.pause();  
+      playButton.style.display = 'flex';  
     }
   });
 
   videoPlayer.addEventListener('pause', function() {
-    playButton.style.display = 'flex';  // Exibe o ícone quando o vídeo é pausado
+    playButton.style.display = 'flex';  
   });
 
   videoPlayer.addEventListener('play', function() {
-    playButton.style.display = 'none';  // Esconde o ícone quando o vídeo está tocando
+    playButton.style.display = 'none';  
   });
 </script>
 <script>
   $(document).ready(function () {
     if ($(window).width() < 1024) {
         $('.logos-slider-mobile').slick({
-            slidesToShow: 2, // Número de slides visíveis ao mesmo tempo
-            slidesToScroll: 1, // Número de slides a avançar por vez
+            slidesToShow: 2, 
+            slidesToScroll: 1, 
             autoplay: true,
             autoplaySpeed: 2000,
             arrows: false,
-            dots: true, // Adiciona os "dots" de navegação
+            dots: true, 
             responsive: [
                 {
-                    breakpoint: 768, // Configurações para dispositivos menores
+                    breakpoint: 768, 
                     settings: {
                         slidesToShow: 1,
                     }
@@ -581,20 +566,20 @@
 </script>
 <script>$(document).ready(function () {
   $('.carousel').slick({
-    slidesToShow: 1, // Um slide visível por vez
-    slidesToScroll: 1, // Avança um slide por vez
-    autoplay: true, // Avança automaticamente
-    autoplaySpeed: 3000, // Tempo de cada slide (em ms)
-    arrows: false, // Exibe setas
-    dots: true, // Exibe os "dots" na parte inferior
+    slidesToShow: 1, 
+    slidesToScroll: 1, 
+    autoplay: true, 
+    autoplaySpeed: 3000, 
+    arrows: false, 
+    dots: true, 
     prevArrow: '<button class="absolute left-4 md:left-12 bg-white text-black rounded-full p-2 shadow hover:bg-gray-300 z-20"><span class="material-icons">chevron_left</span></button>',
     nextArrow: '<button class="absolute right-4 md:right-12 bg-white text-black rounded-full p-2 shadow hover:bg-gray-300 z-20"><span class="material-icons">chevron_right</span></button>',
     responsive: [
       {
-        breakpoint: 768, // Para telas menores
+        breakpoint: 768, 
         settings: {
-          dots: true, // Ativa os dots
-          arrows: false, // Desativa as setas no mobile
+          dots: true, 
+          arrows: false, 
         }
       }
     ]
@@ -616,9 +601,9 @@ $('.carousel-different').slick({
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 768, // Para dispositivos menores que 768px
+                    breakpoint: 768, 
                     settings: {
-                        slidesToShow: 1, // Exibir 1 imagem no mobile
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                     }
                 }
@@ -627,5 +612,108 @@ $('.carousel-different').slick({
 
 
 </script>
+
+<script>
+document.getElementById("emailForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const area = document.getElementById("area").value.trim();
+  const phoneDDD = document.getElementById("phoneDDD").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const phoneFormatted = `${phoneDDD} ${phone}`;
+
+  showLoading(); // Mostra o spinner
+
+  try {
+    const response = await fetch("http://localhost:4000/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        area,
+        phone: phoneFormatted,
+        message,
+      }),
+    });
+
+    hideLoading(); // Esconde o spinner
+
+    // Verifica o status da resposta
+    if (response.ok) {
+      showPopup("Sucesso", "E-mail enviado com sucesso!");
+      document.getElementById("emailForm").reset();
+    } else {
+      const errorData = await response.json();
+      showPopup("Erro", errorData.message || "Erro ao enviar o e-mail. Tente novamente.");
+    }
+  } catch (error) {
+    hideLoading(); // Esconde o spinner
+    showPopup("Erro", "Erro ao se conectar ao servidor.");
+    console.error(error);
+  }
+});
+
+
+</script>
+
+<script>
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("input", (e) => {
+    let value = e.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos.
+    if (value.length > 9) value = value.slice(0, 9); // Limita o número de dígitos a 9.
+
+    // Formata como XXXXX-XXXX ou XXXX-XXXX
+    if (value.length > 4) {
+      value = value.replace(/(\d{4})(\d+)/, "$1-$2");
+    }
+
+    e.target.value = value;
+  });
+</script>
+
+<script>
+  function showPopup(title, message) {
+  const popup = document.getElementById("popup");
+  const popupTitle = document.getElementById("popup-title");
+  const popupMessage = document.getElementById("popup-message");
+
+  popupTitle.textContent = title;
+  popupMessage.textContent = message;
+
+  popup.classList.add("show");
+}
+
+function closePopup() {
+  const popup = document.getElementById("popup");
+  popup.classList.remove("show");
+}
+
+// Adiciona evento de fechar ao botão.
+document.getElementById("popup-close").addEventListener("click", closePopup);
+
+</script>
+
+<script>
+  function showLoading() {
+  const spinner = document.getElementById("loading-spinner");
+  spinner.classList.add("show");
+}
+
+function hideLoading() {
+  const spinner = document.getElementById("loading-spinner");
+  spinner.classList.remove("show");
+}
+
+</script>
+
+
 </body>
 </html>
