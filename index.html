@@ -629,7 +629,7 @@ document.getElementById("emailForm").addEventListener("submit", async (e) => {
   showLoading(); // Mostra o spinner
 
   try {
-    const response = await fetch("http://localhost:4000/send-email", {
+    const response = await fetch("https://backend-core-218t.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
