@@ -21,12 +21,25 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "kroosLight";
+  src: url("fonts/fontes/KrossNeueGrotesk-Light.woff2") format("woff2"),
+    url("fonts/fontes/KrossNeueGrotesk-Light.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic;
+}
+
 .carousel-different .slick-slide {
   margin: 0 10px;
 }
 
 .kroosItalic {
   font-family: "kroosItalic";
+  font-style: italic;
+}
+
+.kroosLight {
+  font-family: "kroosLight";
   font-style: italic;
 }
 
@@ -73,4 +86,31 @@
 
 #loading-spinner.show {
   display: flex; /* Mostra o spinner */
+}
+
+.border-custom {
+  position: relative;
+}
+
+.border-custom::before,
+.border-custom::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  height: 2px;
+  background-color: #ff0000; /* Cor vermelha */
+}
+
+.border-custom::before {
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.border-custom::after {
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
