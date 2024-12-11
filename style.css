@@ -1,7 +1,8 @@
 @font-face {
   font-family: "kroosItalic";
   src: url("fonts/fontes/KrossNeueGrotesk-Italic.woff2") format("woff2"),
-    url("fonts/fontes/KrossNeueGrotesk-Italic.woff") format("woff");
+    url("fonts/fontes/KrossNeueGrotesk-Italic.woff") format("woff"),
+    url("fonts/fontes/KrossNeueGrotesk-Italic.eot") format("eot"); /* Adicionando o .eot para IE */
   font-weight: normal;
   font-style: italic;
 }
@@ -9,24 +10,28 @@
 @font-face {
   font-family: "kroosItalicBold";
   src: url("fonts/fontes/KrossNeueGrotesk-BoldItalic.woff2") format("woff2"),
-    url("fonts/fontes/KrossNeueGrotesk-BoldItalic.woff") format("woff");
+    url("fonts/fontes/KrossNeueGrotesk-BoldItalic.woff") format("woff"),
+    url("fonts/fontes/KrossNeueGrotesk-BoldItalic.eot") format("eot");
   font-weight: bold;
   font-style: italic;
 }
+
 @font-face {
   font-family: "kroos";
   src: url("fonts/fontes/KrossNeueGrotesk-Regular.woff2") format("woff2"),
-    url("fonts/fontes/KrossNeueGrotesk-Regular.woff") format("woff");
+    url("fonts/fontes/KrossNeueGrotesk-Regular.woff") format("woff"),
+    url("fonts/fontes/KrossNeueGrotesk-Regular.eot") format("eot");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal; /* Corrigido de italic para normal */
 }
 
 @font-face {
   font-family: "kroosLight";
   src: url("fonts/fontes/KrossNeueGrotesk-Light.woff2") format("woff2"),
-    url("fonts/fontes/KrossNeueGrotesk-Light.woff") format("woff");
+    url("fonts/fontes/KrossNeueGrotesk-Light.woff") format("woff"),
+    url("fonts/fontes/KrossNeueGrotesk-Light.eot") format("eot");
   font-weight: lighter;
-  font-style: italic;
+  font-style: normal; /* Corrigido de italic para normal */
 }
 
 .carousel-different .slick-slide {
