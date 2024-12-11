@@ -32,7 +32,9 @@
 .carousel-different .slick-slide {
   margin: 0 10px;
 }
-
+.carousel-different2 .slick-slide {
+  margin: 0 10px;
+}
 .kroosItalic {
   font-family: "kroosItalic";
   font-style: italic;
